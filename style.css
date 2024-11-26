@@ -464,7 +464,27 @@ body.nav-active { overflow: hidden; }
 
 
 
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-block-end: 50px;
+}
 
+.image-container .responsive-image {
+  width: 200px;
+  /* Adjust size as needed */
+  height: 200px;
+  /* Ensure width and height are equal for a perfect circle */
+  border-radius: 50%;
+  /* Makes the image circular */
+  object-fit: cover;
+  /* Ensures the image scales well inside the circle */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  /* Optional shadow for aesthetic */
+  border: 2px solid #e3e3e3;
+  /* Optional border to mimic WhatsApp DP style */
+}
 
 /*-----------------------------------*\
   #PROJECTS
